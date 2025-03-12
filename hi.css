@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+    background-color: #FF6F91;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+.element {
+    position: absolute;
+}
+
+.music-player {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: url('https://i.imgur.com/Ty9zxlG.gif');
+    /* Cute pink starry gif */
+    background-size: cover;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 280px;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.music-player p {
+    font-size: 12px;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.music-player img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.controls button {
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#play-btn {
+    background: url('https://i.imgur.com/dXN5OXL.png') no-repeat center;
+}
+
+#pause-btn {
+    background: url('https://i.imgur.com/3fOqZz9.png') no-repeat center;
+}
+
+.controls button:hover {
+    transform: scale(1.2) rotate(5deg);
+}
+
+.controls button:active {
+    transform: scale(1) rotate(-5deg);
+}
+
+.stars,
+.lamps,
+.cats {
+    position: absolute;
+    width: 80px;
+}
